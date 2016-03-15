@@ -1,0 +1,98 @@
+body {
+width:100%; 
+background-color:lightblue;
+}
+
+p {
+max-width: 100%;
+overflow: hidden; 
+text-align: center;
+
+
+}
+
+a {
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+float: left;
+
+display: block;
+ color: white;
+    text-align: center;
+    padding: 14px 36px;
+    text-decoration: none;
+
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+div {
+max-width: 100%;
+height:2900px; 
+overflow:auto; 
+border:solid 1px black;
+}
+
+header {
+max-width: 100%;
+height:200px; 
+overflow:auto; 
+border:solid 1px black;
+}
+
+nav {
+background-color:lightgrey;
+width:100%; 
+height:70px;  
+border:solid 1px black;
+}
+
+section {
+max-width: 100%;
+height:900px; 
+overflow:auto; 
+border:solid 1px black;
+}
+
+article {
+max-width: 100%;
+height:150px; 
+overflow:auto; 
+border:solid 1px black;
+}
+
+.b_inscription{
+text-align : left;
+}
+
+.b_connexion{
+text-align : right;
+}
+
+.bouton1 {
+	border:none;
+	padding:6px 0 6px 0;
+	border-radius:50%;
+	background:#478bf9;
+	font:bold 13px Arial;
+	color:#fff;
+	width:160px;
+text-align: center;
+}
+
+.bouton2 {
+	border:none;
+	padding:6px 0 6px 0;
+	border-radius:50%;
+	background:#478bf9;
+	font:bold 13px Arial;
+	color:#fff;
+	width:160px;
+float : center;
+}

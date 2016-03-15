@@ -1,0 +1,52 @@
+<?php
+$title="MY HOME lolo";
+?>
+
+<nav>
+	  <br/>
+
+<div class="liens">
+
+	  <a href="file:///home/morgane/public_html/indexprojet.php">Accueil</a>
+	  <a href="file:///home/morgane/public_html/evenements.php">Evenements</a>
+	  <a href="file:///home/morgane/public_html/rencontres.php">Rencontres</a>
+	  <a href="inscriptionprojet.php">Inscription</a>
+	  <a href="file:///home/morgane/public_html/connexionprojet.php">Connexion</a>
+	  <a href="file:///home/morgane/public_html.php">Autre 1</a>
+	  <a href="file:///home/morgane/public_html.php">Autre 2</a>
+
+</div>
+
+	</nav>
+
+	<section>
+	  <article>
+<p>
+Vous voulez rencontrer de nouvelles personnes avec les mêmes centres d'intérêt que vous? Créer des événements ensembles? Alors bienvenue sur ce nouveaux site de rencontres! 
+</p>
+	    <br/>
+	    <br/>
+	  </article>
+
+	  <article>
+ 
+<p class="b_inscription">	  
+Intéressé(e)? Alors inscrivez-vous tout de suite!</p>              
+
+<a class="bouton1" href="inscriptionprojet.php">Inscription</a>       
+</article>
+
+<article>
+<p class="b_inscription"> Déjà inscrit(e)? Connectez-vous sans tarder!</p> 
+
+ <a class="bouton2" href="connexionprojet.php">Connexion</a>
+</article>
+
+
+
+
+      </article>
+      </section>
+    </div>
+
+
