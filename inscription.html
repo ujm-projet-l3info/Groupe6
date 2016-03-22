@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <title>Inscription</title>
+  <link rel="stylesheet" type="text/css" href="feuillecss.css" />
+  <script type="text/javascript" src="f_javascript.js"></script>
+</head>
+
+<body>
+  <div id="blocPage">
+    <header>
+      <div id="titrePage">
+        <img src="image/banniere_amis.jpg" width="600" height="300">
+      </div>
+    </header>
+      
+    <section>
+      <h2>Inscription</h2>
+      <form id="inscri" onSubmit="return verifForm(this)"
+      action="enregistrer.php" method="post">
+	<p>Sexe : <label><input type="radio" name="sexe" value="masc"
+				id="masc" required/>Homme</label>
+	  <label><input type="radio" name="sexe" value="fem"
+			id="fem" required/>Femme</label><br/>
+	  <label>Nom : <input type="text" name="nom" id="nom" value=""
+			      required/></label><br/>
+	  <label>Prénom : <input type="text" name="prenom" id="prenom" value=""
+				 required/></label><br/>
+	  <label>Pseudo : <input type="text" name="pseudo" id="pseudo" value=""
+				 onblur="verifPseudo(this)"
+				 required/></label><br/>
+	  <label>Adresse Mail :<input type="email" name="mail" id="mail" size="10"
+				      value="Adresse mail"  required/></label><br/>
+	  <label>Mot de passe : <input type="password" name="mdp" id="mdp" size="10"
+				       value="vide" onblur="verifMdp(this)"
+				       required/></label><br/>
+	  <label>Vérifier mot de passe : <input type="password" name="mdpv" id="mdpv" size="10"
+						value="vide" onblur="verifMdpv(this)"
+						required/></label><br/>
+	  <input type="submit" value="S'inscrire"/>
+      </form>
+      <a href="index.html">Retour à l'accueil</a>
+    </section>
+
+    <footer>
+      <p> Contactez-nous : morgane.pielawski@etu.univ-st-etienne.fr /
+      remy.duverger@etu.univ-st-etienne.fr <br/>
+	&copy; Morgane Pielawski - Rémy Duverger </p>
+    </footer>
+     
+      
+      
+  </div>
+</body>
+</html>

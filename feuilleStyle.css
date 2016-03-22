@@ -1,0 +1,57 @@
+table, td {
+    border: 1px solid #E85805;
+}
+td {
+    padding: 5px;
+    text-align: justify;
+}
+
+
+body{
+    background-color: #C2C2C2;
+    font-family: "Verdana";
+    font-size : 14px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+header{
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #E42650;
+}
+
+nav {
+    background-color: #BF8C56;
+    padding: 0; margin: 0;
+    text-align: center;
+}
+
+article {
+    float: left;
+}
+
+a {
+    font-style : italic;
+    color: #00B333;
+}
+
+h2, h3{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #9C3B03;
+}
+
+h3 {
+    text-align: left;
+}
+
+aside {
+    float: right;
+}
+footer{
+    text-align: center;
+    clear:both;
+}

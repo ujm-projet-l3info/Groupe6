@@ -1,0 +1,55 @@
+body
+{
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#C2C2C2;
+    width: 75%;
+}
+
+img
+{
+    align:center;
+}
+
+#centrale
+{
+    width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+}
+
+
+
+#menu
+{
+    float:left;
+    height:350px;
+    width:200px;
+    background-color:#BF8C56;
+}
+
+
+#contenu
+{
+    width:650px;
+    height:350px;
+    float:left;
+
+}
+
+#pied
+{
+    text-align:center;
+    clear:both;
+    height:50px;
+}
+
+
+
+
+
+
+
+
