@@ -18,7 +18,7 @@ if(isset($_POST) && isset($_POST['login']) AND isset($_POST['passw'])){
 	if ($passe == $rep['pass']){
 	   session_start();
 	   $_SESSION['utilisateur'] = $_POST['login'];
-        header('location:connection.html');
+        header('location:index_m.php');
 	   
 	}else{
 	   echo 'Mot de passe incorrect';

@@ -42,7 +42,7 @@ if(isset($_POST) && isset($_POST['sexe']) && isset($_POST['nom']) && isset($_POS
 		 $i->bindParam(':sexe', $sexe);
 		 $i->execute();
 		 echo 'OK bdd';
-		 header('Location: accueil_m.php');
+		 header('Location: index_m.php');
 		 
 
 }

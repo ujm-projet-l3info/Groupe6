@@ -1,8 +1,8 @@
 <?php
 $BDD_hote = 'localhost';
-$BDD_bd = 'echange';
+$BDD_bd = 'projet_prog_2016';
 $BDD_utilisateur = 'root';
-$BDD_mot_passe = 'root';
+$BDD_mot_passe = 'NZNSUSFB';
 
 try{
 	$bdd = new PDO('mysql:host='.$BDD_hote.';dbname='.$BDD_bd, $BDD_utilisateur, $BDD_mot_passe);
