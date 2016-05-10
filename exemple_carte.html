@@ -1,0 +1,60 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<head>
+  <title>Exemple de Carte Google Maps</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <!-- meta pour la taille de la carte fixe (non modifiable par l'utilisateur -->
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+<style type="text/css">
+    html { height: 100% }
+    body { height: 100%; margin: 0px; padding: 0px }
+    #map_canvas { height: 100% ; width:100%;}
+  </style>
+  
+  <!-- script d'import de la carte -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDOfN08AtRyEkM7tthltzKHWoPb8NeNgDk"></script>
+  <script type="text/javascript">
+    <!-- fonction d'initialisation -->
+    function init() {
+    <!-- on definit la position de base -->
+    var latlng = new google.maps.LatLng(46.779231, 6.659431);
+    <!-- et les options de la carte -->
+    var options = {
+    center: latlng, <!-- le centre -->
+    zoom: 19, <!-- le niveau de zoom [0;20] -->
+    mapTypeId: google.maps.MapTypeId.ROADMAP <!-- le type de carte qu'on aura ici type road "classique" -->
+    };
+    <!-- definition de la classe en elle meme -->
+    map = new google.maps.Map(document.getElementById("map_canvas"), options);
+
+    <!-- TEST DE LOCALISATION -->
+    if (navigator.geolocation){
+    var pos_usr = navigator.geolocation.watchPosition(successCallback, null, {enableHighAccuracy:true});
+    alert("Vous êtes géolocalisé !");
+    }
+    else
+    alert("La géolocalisation est désactivée !");
+
+    <!-- appel a la fonction successCallback si la geo est activée -->
+    function successCallback(position){
+    <!-- on centre la carte sur la postion de l'usr -->
+    map.panTo(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+    <!-- ajout d'un marqueur pour la visualisation -->
+    var marker = new google.maps.Marker({
+    position : new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+    map: map
+    });
+    }
+}
+
+</script>
+</head>
+
+<!-- load de la page avec l'initialisation de la carte -->
+
+<body onload="init()">
+  <!-- div pour la carte -->
+  <div id="map_canvas" style="width:100%; height:100%"></div>
+</body>
+
+</html>

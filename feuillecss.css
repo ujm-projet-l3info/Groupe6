@@ -1,58 +1,123 @@
+html{
+    height: 100%;
+}
+
 body
 {
     text-align:center;
     margin-left: auto;
     margin-right: auto;
-    background-color:#C2C2C2;
+    background-color:#EBF5EC
     width: 100%;
+    position: relative;
+    height: 100%;
 }
 
-#entete img{ 
+
+#entete img
+{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
+    margin: auto;
+    max-width: 1200px;;
     height: auto;
+    padding: 0px 30px;
+    position: relative;
 }
+
+
 
 #centrale
 {
-    width:1000px;
+    max-width:auto;
+    min-height:100%;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
-    text-align:left;
+    /* text-align:left; */
+}
+
+#main{
+    position: relative;
+    padding-bottom: 100px;
 }
 
 
 
 #menu
 {
-    float:left;
-    height:500px;
-    width:250px;
-    background-color:#BF8C56;
+    float:top;
+    height:50px;
+    margin: 10px;
+    max-width: 100%;
+    border: solid red 2px;
+    box-shadow: 1px 1px 8px red;
+    text-align: center;
 }
 
+#nav
+{
+    text-align: center;
+}
+
+
+#carteStEtienne .iframe{
+    clear: bottom;
+    float: left;
+}
 
 #contenu
 {
     width:650px;
     height:350px;
     float:left;
-
 }
+
+
 
 #pied
 {
-    text-align:center;
-    clear:both;
-    height:50px;
+    position: center;
+    bottom: 0;
+    max-width: 100%;
+    border: solid black 2px;
+    height:80px;
+    clear: top;
+    vertical-align: initial;
+}
+
+#profil1 {
+    float:left;
+    padding:3px;
+    border:8px ridge #d04cdc;
+    background-color:#d04cdc;
 }
 
 
+#profil2 {
+    float:right;
+    padding:3px;
+    border:4px inset #4cdc67;
+    background-color:#4cdc67;
+}
 
+.infos{
+    padding:5px;
+    background-color:#9ba0ee;
+    border:2px solid #656ab0;
+    -moz-border-radius:9px;
+    -khtml-border-radius:9px;
+    -webkit-border-radius:9px;
+    border-radius:9px;
+}
 
+.important{
+    padding:3px;
+    border:5px double #ff6b00;
+    background-color:#ffdbc1;
+    margin-left:150px;
+    margin-right:150px;
+}
 
-
-
-
+h1{
+    font-decoration:underline;
+}

@@ -1,25 +1,26 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE HTML>
+<html>
+
 <head>
-  <meta charset="utf-8"/>
-  <title>Inscription</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
   <link rel="stylesheet" type="text/css" href="feuillecss.css" />
-  <script type="text/javascript" src="f_javascript.js"></script>
+
+  <title>Inscription</title>
+
 </head>
 
 <body>
-  <div id="blocPage">
-    <header>
-      <div id="titrePage">
-        <img src="image/banniere_amis.jpg" width="600" height="300">
-      </div>
-    </header>
-      
+<div id="centrale">
+    
+    <div id="entete"><img src="image/easste.png" ></div>
+
+    <div id="main">     
     <section>
       <h2>Inscription</h2>
       <form id="inscri" onSubmit="return verifForm(this)"
       action="enregistrer.php" method="post">
-	<p>Sexe : <label><input type="radio" name="sexe" value="masc"
+	Sexe : <label><input type="radio" name="sexe" value="masc"
 				id="masc" required/>Homme</label>
 	  <label><input type="radio" name="sexe" value="fem"
 			id="fem" required/>Femme</label><br/>
@@ -38,19 +39,40 @@
 	  <label>Vérifier mot de passe : <input type="password" name="mdpv" id="mdpv" size="10"
 						value="vide" onblur="verifMdpv(this)"
 						required/></label><br/>
+	  <p>Sélectionnez un ou plusieurs centre(s) d'intérêt :</p>
+	  <label><input type="checkbox" name="cinema" value="cinéma" id="cine" />Cinéma</label>
+	  <label><input type="checkbox" name="litterature" value="littérature" id="litt" />Littérature</label>
+	  <label><input type="checkbox" name="cuisine" value="cuisine" id="cook" />Cuisine</label>
+	  <label><input type="checkbox" name="art" value="art" id="art" />Art</label><br/>
+
+	  <label><input type="checkbox" name="jv" value="jeux_videos" id="jv" />Jeux Vidéos</label>
+	  <label><input type="checkbox" name="deco" value="déco" id="deco" />Décoration</label>
+	  <label><input type="checkbox" name="archi" value="architecture" id="archi" />Architecture</label><br/>
+	  
+	  <label><input type="checkbox" name="animaux" value="animaux" id="animaux" />Animaux</label>
+	  <label><input type="checkbox" name="info" value="info" id="info" />Informatique</label>
+	  <label><input type="checkbox" name="sciences" value="sciences" id="sciences" />Sciences</label>
+	  <br/>
+	  <br/>
 	  <input type="submit" value="S'inscrire"/>
       </form>
+      <br/>
       <a href="index.html">Retour à l'accueil</a>
     </section>
 
-    <footer>
+
+    <!-- fin div main -->
+    </div>
+
+    <div id="pied">
       <p> Contactez-nous : morgane.pielawski@etu.univ-st-etienne.fr /
-      remy.duverger@etu.univ-st-etienne.fr <br/>
-	&copy; Morgane Pielawski - Rémy Duverger </p>
-    </footer>
-     
-      
-      
-  </div>
+	remy.duverger@etu.univ-st-etienne.fr <br/>
+	&copy; Morgane Pielawski - Rémy Duverger <br/>
+	<a href="infos.php">Qui sommes-nous ?</a>
+      </p>
+    </div>
+
+<!-- fin div centrale-->
+</div>
 </body>
 </html>

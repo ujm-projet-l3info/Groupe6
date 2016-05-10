@@ -8,7 +8,7 @@ if(isset($_POST) && isset($_POST['login']) AND isset($_POST['passw'])){
      $x = $y->fetch();
 
      if ($x[0] == 0){
-     	  header('location:index2.html');
+     	  header('location:index.html');
         }else{
 	$e = $bdd->prepare('SELECT pass FROM membres WHERE mail = ?');
 	$e->execute(array($_POST['login']));
