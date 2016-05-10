@@ -121,3 +121,5 @@ body
 h1{
     font-decoration:underline;
 }
+
+#map_canvas { height: 50%; width:50%;}
